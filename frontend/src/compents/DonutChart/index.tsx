@@ -8,6 +8,11 @@ function DonutChart() {
         labels: ['Anakin', 'Barry Allen', 'Kal-El', 'Logan', 'Padmé']
     }
     
+    const options = {
+        legend: {
+            show: true
+        }
+    }
     
     return (
       <Chart 
