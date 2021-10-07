@@ -14,12 +14,12 @@ import javax.persistence.Table;
 @Table(name = "tb_sellers")
 public class Seller {
 
-	@Id
+	@Id  
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
 	
-	@OneToMany(mappedBy = "seller")
+	@OneToMany(mappedBy = "seller") // contrario um para muitos
 	private List<Sale> sales = new ArrayList<>();  //Lista de selles m para n
 	
 	public Seller() {
